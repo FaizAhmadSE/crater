@@ -2,7 +2,6 @@
 
 namespace Crater\Providers;
 
-use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         if ($this->app->environment() !== 'production') {
-            $this->app->register(IdeHelperServiceProvider::class);
+            $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProviderIdeHelper::class);
         }
         /*ADD THIS LINES*/
         $this->commands([
