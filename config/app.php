@@ -166,7 +166,6 @@ return [
         Crater\Providers\BroadcastServiceProvider::class,
         Crater\Providers\EventServiceProvider::class,
         Crater\Providers\RouteServiceProvider::class,
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class
     ],
